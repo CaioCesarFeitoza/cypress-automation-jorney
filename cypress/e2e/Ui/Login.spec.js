@@ -18,7 +18,7 @@ describe('Funcionalidade: Login', () => {
 
         cy.login('jjjjjjjj','135Caio246#')
 
-        cy.get('.MuiFormHelperText-root').should('contain', 'Digite um email válido')
+        cy.get('.MuiFormHelperText-root').should('contain', 'Digite um email que seja válido')
     });
 
     it('Validar mensagem de erro quando inserir usuário válido e senha de tamanho menor que 6 caracteres', () => {
